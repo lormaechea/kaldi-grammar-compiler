@@ -1,0 +1,70 @@
+## Demo file for showing purposes
+
+Utterance
+Source bonjour ?(madame | monsieur | mademoiselle)
+Target/french bonjour
+EndUtterance
+
+Utterance
+Source je suis $$personne ?aujourd'hui
+Source c'est moi ?(qui suis) $$personne ?aujourd'hui
+Target/french je suis $$personne
+EndUtterance
+
+
+TrLex $$personne source="(votre|le|un) (docteur | médecin) ?(de service)" french="le docteur"
+TrLex $$personne source="(votre|la|une) doctoresse" french="la doctoresse"
+TrLex $$personne source="(l'infirmière|votre infirmière)" french="l'infirmière"
+
+
+Utterance
+Source $$assurance
+Source ?(en cas d'hospitalisation) la couverture ?(d'assurance) est-elle $$assurance ?(en cas d'hospitalisation)
+Source votre assurance ?hospitalisation est-elle $$assurance ?(en cas d'hospitalisation)
+Source $avez_vous assurance ?hospitalisation $$assurance ?(en cas d'hospitalisation)
+Target/french en cas d'hospitalisation, la couverture d'assurance est-elle $$assurance ?
+EndUtterance
+
+TrLex $$assurance source="privée" french="privée"
+TrLex $$assurance source="semi-privée" french="semi-privée"
+TrLex $$assurance source="en chambre commune" french="en chambre commune"
+
+
+Utterance
+Source $$état_civil
+Source ?$êtes_vous $$état_civil
+Target/french êtes-vous $$état_civil ?
+EndUtterance
+
+TrLex $$état_civil source="(marié | mariée)" french="marié"
+TrLex $$état_civil source="célibataire" french="célibataire"
+TrLex $$état_civil source="(divorcé | divorcée)" french="divorcé"
+TrLex $$état_civil source="(séparée | séparée)" french="séparé"
+
+Utterance
+Source ?$êtes_vous (veuf | veuve)
+Target/french êtes-vous veuf ?
+EndUtterance
+
+Utterance
+Source $avez_vous un mari
+Source $avez_vous une femme 
+Target/french êtes-vous marié ?
+EndUtterance
+
+
+Phrase
+PhraseId $avez_vous
+Source avez-vous
+Source est-ce que vous avez
+Source vous avez
+EndPhrase
+
+
+Phrase
+PhraseId $êtes_vous
+Source ?(est-ce que) vous êtes
+Source êtes-vous
+Source avez-vous été
+Source ?(est-ce que) vous avez été
+EndPhrase
