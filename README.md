@@ -19,7 +19,7 @@ In order to properly run this tool, it is necessary to previously install the la
 
     $ git clone https://github.com/kaldi-asr/kaldi.git .
 
-You will then need to fork/clone the ***kaldi-grammar-compiler*** into your local/remote machine:
+You will then need to fork/clone the __kaldi-grammar-compiler__ into your local/remote machine:
 
     $ git clone https://github.com/lormaechea/kaldi-grammar-compiler.git .
 
