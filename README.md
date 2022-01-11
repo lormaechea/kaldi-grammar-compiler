@@ -45,20 +45,22 @@ The execution is as follows:
 
 ## Stage [0] | Data preparation and normalization
 
+Two Regulus Lite grammars are made available inside `workingExamples/` (`medico.rl` and `homeautomation.rl`).
+
 Before proceeding to the compilation of the grammars, a preparation and normalization process is firstly required. In order to do so, `prepareGrammar.pl` will be called by our main script. It will:
 
 - First take as input a source grammar written in the Regulus Lite formalism and split the __main grammar__ (containing a set of phrases which represent some specific discourse) from the __sub-grammars__ (corresponding to word classes represented by non-terminal symbols). 
 - And then normalize the data so that it can be properly converted into FSTs in the next phase. 
 
-From which we will get the subsequent files as output (let's assume that `demo.txt` is the `<INPUT_FILE>`):
+From which we will get the subsequent files as output (let's assume that `medico.rl` is the `<INPUT_FILE>`):
 
-- `demo_main.txt` &rarr; Main grammar.
+- `medico_main.txt` &rarr; Main grammar.
 
-- `demo_sub.txt` &rarr; Sub-grammars.
+- `medico_sub.txt` &rarr; Sub-grammars.
 
-- `demo_main_norm.txt` &rarr; Normalized main grammar.
+- `medico_main_norm.txt` &rarr; Normalized main grammar.
 
-- `demo_sub_norm.txt `&rarr; Normalized sub-grammars.
+- `medico_sub_norm.txt `&rarr; Normalized sub-grammars.
 
 - `newWords.txt` &rarr; This is a file that will add to a pre-existing lexicon the absent non-terminal symbols and the Out-Of-Vocabulary (OOV) forms found in the grammar given in input. It will assign an identifier to each unit. 
 
