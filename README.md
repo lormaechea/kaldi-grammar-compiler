@@ -2,7 +2,7 @@
     kaldi-grammar-compiler &middot; Support for Grammar-Based Language Models in Kaldi
 </h1>
 
-__kaldi-grammar-compiler__ is a minimal tool that helps transforming [Regulus Lite](https://arxiv.org/abs/1510.01942) regular grammars into compiled Finite State Transducers (FSTs). This thus makes them readable as language models (G.fst) in Kaldi so that they can be used as part of an Automatic Speech Recognition (ASR) system. By doing so, we intended to provide a straight-forward tool for adding grammar-based language models into the Kaldi Speech Technology Toolkit.
+__kaldi-grammar-compiler__ is a minimal tool that helps transforming [Regulus Lite](https://arxiv.org/abs/1510.01942) regular grammars into compiled Finite State Transducers (FSTs). This thus makes them readable as language models (`G.fst`) in Kaldi so that they can be used as part of an Automatic Speech Recognition (ASR) system. By doing so, we intended to provide a straight-forward tool for adding grammar-based language models into the Kaldi Speech Technology Toolkit.
 
 The tool that we present is built from a collection of programs written in Bash, Perl and Python using standard libraries and the C++ OpenFST library. 
 
