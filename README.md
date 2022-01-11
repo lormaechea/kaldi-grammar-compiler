@@ -85,4 +85,4 @@ Once the pipeline process is achieved, a folder containing the resulting grammar
 
 ## License
 
-Licensed under the [Apache 2.0 License](https://github.com/lormaechea/kaldi_grammar_compiler/blob/main/LICENSE).
+Licensed under the [Apache 2.0 License](https://github.com/lormaechea/kaldi-grammar-compiler/blob/master/LICENSE).
