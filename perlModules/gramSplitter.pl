@@ -15,14 +15,14 @@ sub grammarSplit {
     # Output files:
     # --> Main grammar:
     my $mainOutput = $fileInput;
-    $mainOutput =~ s/(.+)(\.txt)/$1_main$2/g;
+    $mainOutput =~ s/(.+)(\.rl)/$1_main.txt/g;
 
     # Creating the resulting main grammar file:
     open(MAIN_G, ">:encoding(utf-8)", $mainOutput);
 
     # --> Sub-grammar:
     my $subOutput = $fileInput;
-    $subOutput =~ s/(.+)(\.txt)/$1_sub$2/g;
+    $subOutput =~ s/(.+)(\.rl)/$1_sub.txt/g;
 
     # Creating the resulting main grammar file:
     open(SUB_G, ">:encoding(utf-8)", $subOutput);
