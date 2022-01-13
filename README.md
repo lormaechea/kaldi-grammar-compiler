@@ -7,7 +7,7 @@ __kaldi-grammar-compiler__ is a minimal tool that helps transforming [Regulus Li
 The tool that we present is built from a collection of programs written in Bash, Perl and Python using standard libraries and the C++ OpenFST library. 
 
 <p align="center">
-    <a href="https://github.com/lormaechea/kaldi-grammar-compiler/archive/refs/heads/main.zip">
+    <a href="https://github.com/lormaechea/kaldi-grammar-compiler/archive/refs/heads/master.zip">
         <img src="https://img.shields.io/badge/kaldi--grammar--compiler%201.0-DOWNLOAD-brightgreen?style=for-the-badge&logo=appveyor">
     </a>
 </p>
